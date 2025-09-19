@@ -2,8 +2,7 @@
 
 """
 Simple To-Do List Manager
-This script lets you add, view, and complete tasks.
-Perfect for practicing Git version control and collaboration.
+You may add, view, and complete tasks.
 """
 
 # Store tasks in a list
