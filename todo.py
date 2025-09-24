@@ -3,6 +3,8 @@
 """
 Simple To-Do List Manager
 You may add, view, and complete tasks.
+
+This line is added to show the staging area.
 """
 
 # Store tasks in a list
