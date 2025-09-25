@@ -66,5 +66,27 @@ def main():
             print("❌ Invalid choice, try again.")
 
 
+# New feature 1: load and save tasks to a file
+import os
+
+FILE_NAME = "tasks.txt"
+tasks = []
+
+
+def load_tasks():
+    """Load tasks from a file if it exists."""
+    global tasks
+    if os.path.exists(FILE_NAME):
+        with open(FILE_NAME, "r") as f:
+            tasks = [line.strip() for line in f.readlines()]
+
+
+def save_tasks():
+    """Save tasks to a file."""
+    with open(FILE_NAME, "w") as f:
+        for task in tasks:
+            f.write(task + "\n")
+
+
 if __name__ == "__main__":
     main()
